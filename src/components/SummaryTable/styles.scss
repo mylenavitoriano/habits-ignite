@@ -1,0 +1,35 @@
+@import '../../styles/global';
+
+.summaryTablet{
+    width: 100%;
+    display: flex;
+
+    .table{
+        @include grid-7-rows();
+        grid-auto-flow: row;
+
+        .day{
+            color: $zinc-400;
+            font-size: 1.25rem;
+            font-weight: 700;
+            height: 2.5rem;
+            width: 2.5rem;
+            @include display-flex(center, center)
+        }
+    }
+
+    .tableCheckHabit{
+        @include grid-7-rows();
+        grid-auto-flow: column;
+
+        .habitDayDisabled{
+            width: 2.5rem;
+            height: 2.5rem;
+            background: $zinc-900;
+            border: 2px solid $zinc-800;
+            border-radius: .5rem;
+            opacity: .4;
+            cursor: not-allowed;
+        }
+    }
+}

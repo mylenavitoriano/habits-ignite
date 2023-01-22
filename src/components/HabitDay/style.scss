@@ -1,0 +1,10 @@
+@import '../../styles/global';
+
+.habitDay{
+    width: 2.5rem;
+    height: 2.5rem;
+    background: $zinc-900;
+    border: 2px solid $zinc-800;
+    border-radius: .5rem;
+    cursor: pointer;
+}

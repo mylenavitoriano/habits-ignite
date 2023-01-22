@@ -1,0 +1,30 @@
+$violet-300: #C4B5FD;
+$violet-400: #A78BFA;
+$violet-500: #8B5CF6;
+$violet-600: #7C3AED;
+$violet-700: #6D28D9;
+$violet-800: #5B21B6;
+$violet-900: #4C1D95;
+
+$zinc-200: #E4E4E7;
+$zinc-400: #A1A1AA;
+$zinc-700: #3F3F46;
+$zinc-800: #27272A;
+$zinc-900: #18181B;
+
+$green-500: #22C55E;
+
+$white: #FFF;
+$background: #09090A;
+
+@mixin display-flex($align, $justify){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin grid-7-rows(){
+    display: grid;
+    grid-template-rows: repeat(7, minmax(0, 1fr));
+    gap: .75rem;
+}

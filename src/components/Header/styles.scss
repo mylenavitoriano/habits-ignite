@@ -1,0 +1,69 @@
+@import '../../styles/global';
+
+.header{
+    width: 100%;
+    max-width: 48rem;
+    margin-inline: auto;
+    @include display-flex(center, space-between);
+
+    
+    
+    .btnNewHabit{
+        border: 1px solid $violet-500;
+        font-weight: 600;
+        border-radius: .5rem;
+        padding: 1rem 1.5rem;
+        background-color: transparent;
+        @include display-flex(center, center);
+        gap: .75rem;
+        transition: all ease .3s;
+
+        &:hover{
+            border-color: $violet-300;
+            cursor: pointer;
+        }
+
+        .iconPlus{
+            color: $violet-500;
+        }
+    }
+}
+.dialogOverlay{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.dialogContent{
+    position: absolute;
+    padding: 2.5rem;
+    background: $zinc-900;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 28rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.dialogClose{
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    color: $zinc-400;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+
+    &:hover{
+        color: $zinc-200;
+    }
+}
+
+.dialogTitle{
+    font-size: 1.875rem;
+    line-height: 1.25;
+}
